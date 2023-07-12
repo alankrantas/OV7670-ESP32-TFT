@@ -19,13 +19,13 @@ If you have trouble flashing the ESP32, try press and hold the **boot** button a
 
 ## Wiring
 
-| OV7670 | ESP32 Pin |
+| OV7670 non-FIFO | ESP32 Pin |
 | --- | --- |
 | RESET | 3.3V |
 | PWDN | GND |
-| SSCB_SDA (SIOD) | 21 |
-| SSCB_SCL (SIOC) | 22 |
-| HREF | NC (not connected) |
+| SSCB_SDA (SIOD) | 21 (pulled up with 1kΩ resistor) |
+| SSCB_SCL (SIOC) | 22 (pulled up with 1kΩ resistor) |
+| HREF | (not connected) |
 | D0 | 36 |
 | D1 | 39 |
 | D2 | 34 |
@@ -38,14 +38,14 @@ If you have trouble flashing the ESP32, try press and hold the **boot** button a
 | PCLK | 14 |
 | VSYNC | 13 |
 
-| ILI9341 | ESP32 Pin |
+| ILI9341 TFT | ESP32 Pin |
 | --- | --- |
 | VCC | 3.3V |
 | GND | GND |
 | DC | 16 |
-| CS | 5 |
+| CS | 5 (can be not connected if your TFT does not expose CS pin) |
 | RST | 17 |
-| MISO | 19 |
+| MISO | 19 (can be not connected) |
 | MOSI | 23 |
 | CLK | 18 |
 | LED (backlight) | 3.3V |
