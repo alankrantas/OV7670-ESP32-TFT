@@ -10,6 +10,8 @@ Display live color video of a non-FIFO OV7670 camera module on a 320x480 ILI9341
 
 Note: since most pins are used, there is no room to attach a SD card module or something.
 
+If you have trouble flashing the ESP32, try press and hold the **boot** button and press **EN** once before flashing, and release **boot** when "Connecting....." shows up.
+
 ## Drivers
 
 * [OV7670-ESP32](https://github.com/kobatan/OV7670-ESP32) driver by kobatan. Download the .zip, extract it and move the ```OV7670-ESP32``` sub-directory (*not* the root) to the [Arduino library directory](https://docs.arduino.cc/hacking/software/Libraries).
