@@ -12,7 +12,7 @@ Note: since most pins are used, there is no room to attach a SD card module or s
 
 ## Drivers
 
-* [OV7670-ESP32](https://github.com/kobatan/OV7670-ESP32) driver by kobatan (download it and manually unzip into the Arduino IDE library directory)
+* [OV7670-ESP32](https://github.com/kobatan/OV7670-ESP32) driver by kobatan. Download the .zip, extract it and move the ```OV7670-ESP32``` sub-directory (*not* the root) to the [Arduino library directory](https://docs.arduino.cc/hacking/software/Libraries).
 * [Adafruit_GFX](https://github.com/adafruit/Adafruit-GFX-Library) and [Adafruit_ILI9341](https://github.com/adafruit/Adafruit_ILI9341)
 
 ## Wiring
